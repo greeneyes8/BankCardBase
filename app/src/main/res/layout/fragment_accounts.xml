@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mohse78.bankcardbase.Activity_Transactions"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/money"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/back_trans_gray"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rial"
+            android:textSize="14sp"
+            android:layout_marginRight="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_transaction_cash_currentBalance"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/currentBalance"
+            android:textColor="@android:color/black"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:background="#ddd"
+        android:layout_marginTop="5dp"
+        >
+
+        <TabHost
+            android:id="@+id/tabHost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    >
+                </TabWidget>
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:id="@+id/tab_cash_debit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/rial"
+                                    android:textSize="13sp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="3dp"
+                                    />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="7"
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/debit"
+                                        android:gravity="left"
+                                        android:paddingLeft="5dp"
+                                        android:inputType="number"
+                                        android:id="@+id/edit_transaction_cash_debitContent"
+                                        />
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/debit_red"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="5dp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/shadow_btn"
+                                android:gravity="center"
+                                android:id="@+id/linear_btn_cash_debit_types"
+                                >
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:id="@+id/image_left_linear_btn_cash_debit_types"
+                                    android:src="@drawable/arrow_down_gray"
+                                    android:layout_weight="1"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="8"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"
+                                    android:id="@+id/text_linear_btn_cash_debit_types"
+                                    />
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/image_right_linear_btn_cash_debit_types"
+                                    />
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/description"
+                                    android:gravity="center"
+                                    android:id="@+id/edit_transaction_cash_debitDescription"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/shadow_btn"
+                                android:layout_marginTop="25dp"
+                                android:id="@+id/text_transaction_cash_debitBtnApply"
+                                android:text="@string/apply"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_cash_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@android:color/white"
+                        android:padding="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="10dp"
+                                >
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/rial"
+                                    android:textSize="13sp"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="3dp"
+                                    />
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="7"
+                                    >
+                                    <EditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/credit"
+                                        android:gravity="left"
+                                        android:paddingLeft="5dp"
+                                        android:inputType="number"
+                                        android:id="@+id/edit_transaction_cash_creditContent"
+                                        />
+                                </android.support.design.widget.TextInputLayout>
+
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/credit"
+                                    android:layout_gravity="bottom"
+                                    android:layout_margin="5dp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:orientation="horizontal"
+                                android:background="@drawable/shadow_btn"
+                                android:gravity="center"
+                                android:id="@+id/linear_btn_credit_types"
+                                >
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:id="@+id/image_left_linear_btn_cash_credit_types"
+                                    android:src="@drawable/arrow_down_gray"
+                                    android:layout_weight="1"
+                                    />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="8"
+                                    android:gravity="center"
+                                    android:textColor="@android:color/black"
+                                    android:textStyle="bold"
+                                    android:id="@+id/text_linear_btn_cash_credit_types"
+                                    />
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/image_right_linear_btn_cash_credit_types"
+                                    />
+
+                            </LinearLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="@string/description"
+                                    android:gravity="center"
+                                    android:id="@+id/edit_transaction_cash_creditDescription"
+                                    />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/shadow_btn"
+                                android:layout_marginTop="25dp"
+                                android:id="@+id/text_transaction_cash_creditBtnApply"
+                                android:text="@string/apply"
+                                android:gravity="center"
+                                android:textColor="@android:color/black"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab_all_cash_transactions"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/recycler_cash_transactions"
+                            ></android.support.v7.widget.RecyclerView>                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+    </LinearLayout>
+
+</LinearLayout>

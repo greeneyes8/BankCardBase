@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:gravity="center_horizontal"
+    android:focusableInTouchMode="false"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/personName"
+            android:maxLength="30"
+            android:id="@+id/edit_add_person_name"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/personMobileNumber"
+            android:inputType="number"
+            android:maxLength="30"
+            android:id="@+id/edit_add_person_mobile"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shadow_btn"
+        android:layout_marginTop="25dp"
+        android:id="@+id/text_btn_add_person"
+        android:text="@string/add"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+</LinearLayout>

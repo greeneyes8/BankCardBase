@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">کارت دان</string>
+
+
+    <string name="addPerson">اضافه کردن شخص جدید</string>
+    <string name="addCard">اضافه کردن کارت جدید</string>
+    <string name="addBank">اضافه کردن بانک جدید</string>
+    <string name="home">خانه</string>
+    <string name="search">جستجو</string>
+    <string name="accounts">حساب ها</string>
+    <string name="description">توضیحات</string>
+    <string name="personSelection">انتخاب شخص</string>
+    <string name="bankSelection">انتخاب بانک</string>
+
+    <string name="bankName">نام بانک</string>
+    <string name="cardNumber">شماره کارت</string>
+    <string name="cvv2">cvv2</string>
+    <string name="expDate">تاریخ انقضا</string>
+    <string name="branchCode">کد شعبه</string>
+    <string name="account_number">شماره حساب</string>
+
+    <string name="personName">نام شخص</string>
+    <string name="personMobileNumber">شماره موبایل</string>
+
+    <string name="add">اضافه</string>
+    <string name="apply">ثبت</string>
+    <string name="cancel">انصراف</string>
+
+    <string name="me">خودم</string>
+
+
+    <string name="accountTransactionEnable">فعال سازی تراکنش ها</string>
+
+    <string name="add_new_person">اضافه کردن شخص جدید</string>
+    <string name="add_new_bank">اضافه کردن بانک جدید</string>
+    <string name="card_added">کارت جدید اضافه شد</string>
+
+    <string name="mounth">ماه</string>
+    <string name="year">سال</string>
+
+
+    <string name="currentBalance">میزان دارایی : </string>
+    <string name="debit">مبلغ برداشتی</string>
+    <string name="credit">مبلغ واریزی</string>
+    <string name="debit2">برداشت</string>
+    <string name="credit2">واریز</string>
+    <string name="noDebitCredit">هیچ مبلغی ثبت نشده است</string>
+    <string name="debitAndCredit">فقط یکی از مبالغ برداشت یا واریز وارد شود</string>
+    <string name="currentBalanceLessThanDebit">موجودی فعلی از مبلغ برداشتی کمتر است</string>
+    <string name="addCreditSuccess">واریز با موفقیت ثبت شد</string>
+    <string name="addDebitSuccess">برداشت با موفقیت ثبت شد</string>
+    <string name="currentBalanceInsertion">ثبت موجودی اولیه</string>
+    <string name="add_transaction">ثبت تراکنش جدید</string>
+    <string name="transaction_list">تراکنش ها</string>
+    <string name="rial">ریال</string>
+    <string name="toman">تومان</string>
+    <string name="noAmount">مبلغی وارد نشده است</string>
+    <string name="amountLessThanZero">مبلغ وارد شده باید بیشتر از 0.0 باشد</string>
+    <string name="debitApply">ثبت مبلغ برداشتی</string>
+    <string name="creditApply">ثبت مبلغ واریزی</string>
+    <string name="transactionTypeCredits">انتخاب نوع تراکنش واریزی</string>
+    <string name="transactionTypeDebits">انتخاب نوع تراکنش برداشتی</string>
+    <string name="addNewTransactions">ثبت تراکنش جدید</string>
+
+
+    <string name="error_message_cardNumber_sumCharacter">شماره کارت در هر ردیف 4 رقم باشد</string>
+    <string name="error_message_expDate_sumCharacter">تاریخ روز و سال هر دو ، دو رقم باشد</string>
+    <string name="error_message_expDate_lessThanToday">تاریخ انقاضا کمتر از حداقل تاریخ امروز است</string>
+    <string name="error_message_cvv2_sumCharacter"> کد cvv2 حداقل 3 رقمی باشد</string>
+    <string name="error_message_expDate_incorrect">تاریخ انقضا اشتباه است</string>
+    <string name="error_message_personName_incorrect">ورود نام ازامی است</string>
+
+
+    <string name="title_types">نوع تراکنش</string>
+
+    <string name="cost_house_buy">خرید منزل</string>
+    <string name="cost_baby">هزینه فرزندان</string>
+    <string name="cost_car">هزینه مربوط به خودرو</string>
+    <string name="cost_clothes">هزینه پوشاک</string>
+    <string name="cost_education">آموزش</string>
+    <string name="cost_resturant">رستوران</string>
+    <string name="cost_fuel">هزینه سوخت</string>
+    <string name="cost_health">هزینه سلامت و بیماری</string>
+    <string name="cost_house">هزینه های مربوط به منزل</string>
+    <string name="cost_insurance">بیمه</string>
+    <string name="cost_party">مهمانی</string>
+    <string name="cost_personal">هزینه شخصی</string>
+    <string name="cost_pets">هزینه حیوانات خانگی</string>
+    <string name="cost_repair">هزینه مربوط به تعمیرات</string>
+    <string name="cost_sport">هزینه ورزش</string>
+    <string name="cost_travel">سفر</string>
+    <string name="cost_transport">حمل و نقل</string>
+    <string name="salary">حقوق</string>
+    <string name="money_giv">دریافت پول دستی</string>
+    <string name="other">دیگر</string>
+
+
+</resources>
